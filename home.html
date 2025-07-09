@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Home - Adhikari Kirana and Madira Pasal</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Adhikari Kirana and Madira Pasal</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <h1>Welcome to Adhikari Kirana and Madira Pasal</h1>
+      <p>Your one-stop shop for groceries and liquor</p>
+    </div>
+  </header>
+
+  <div class="section-toggle">
+    <button class="active" onclick="showSection('groceries')">Groceries</button>
+    <button onclick="showSection('liquor')">Liquor</button>
+  </div>
+
+  <section id="groceries" class="product-grid">
+    <div class="product-card">
+      <img src="img/rice.jpg" alt="Rice">
+      <h3>Rice</h3>
+      <p>Rs. 100/kg</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="img/lentils.jpg" alt="Lentils">
+      <h3>Lentils</h3>
+      <p>Rs. 150/kg</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- More grocery items here -->
+  </section>
+
+  <section id="liquor" class="product-grid" style="display: none;">
+    <div class="product-card">
+      <img src="img/beer.jpg" alt="Beer">
+      <h3>Beer</h3>
+      <p>Rs. 250/bottle</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="img/whiskey.jpg" alt="Whiskey">
+      <h3>Whiskey</h3>
+      <p>Rs. 1200/bottle</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- More liquor items here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adhikari Kirana and Madira Pasal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(section) {
+      document.getElementById('groceries').style.display = section === 'groceries' ? 'grid' : 'none';
+      document.getElementById('liquor').style.display = section === 'liquor' ? 'grid' : 'none';
+      const buttons = document.querySelectorAll('.section-toggle button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

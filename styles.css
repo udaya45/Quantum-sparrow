@@ -1,0 +1,385 @@
+/* Home Page Styling */
+.hero {
+  background: linear-gradient(to right, #e94560, #ff6f91);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background-color: white;
+  color: #e94560;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff6f91;
+  transform: scale(1.05);
+}
+
+.product-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.product-card button {
+  background-color: #e94560;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #ff6f91;
+  transform: scale(1.05);
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1d3557, #ff6f91); /* Gradient Background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: transparent;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .logo img {
+  max-width: 150px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6f91;
+}
+
+/* Login Form Styling */
+.login-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 3rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-container label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6f91;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #e94560;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animation for Fade-In Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #f5f5f5; /* Light text for readability */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Admin Panel Layout */
+.admin-panel {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  background-color: #1e1e1e; /* Dark gray background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+  background-color: #1c1c1c; /* Darker gray for sidebar */
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease-in-out;
+}
+
+.admin-sidebar a {
+  padding: 12px 20px;
+  color: #bbb;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-sidebar a:hover {
+  background-color: #007bff; /* Blue for hover effect */
+  color: #fff; /* White text on hover */
+}
+
+/* Admin Panel Header */
+.admin-panel-header {
+  background-color: #4CAF50; /* Professional green for header */
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Area */
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #2b2b2b; /* Darker background for content */
+  border-radius: 0 8px 8px 0;
+  overflow-y: auto;
+}
+
+/* Heading in Content */
+.admin-content h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Form and Input Styles */
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #333;
+  color: #f5f5f5;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50; /* Green when focused */
+  outline: none;
+  background-color: #444;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Info Section */
+.admin-info {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-out;
+}
+
+.admin-info h3 {
+  color: #4CAF50;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.admin-info p {
+  font-size: 1.1em;
+  color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-panel {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .admin-content {
+    margin-left: 0;
+  }
+}
